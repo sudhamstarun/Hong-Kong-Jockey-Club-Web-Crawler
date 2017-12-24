@@ -146,7 +146,7 @@ for i in alphabets:
 #writing all the lists to json file
 
 #output_data = dict(zip(names, zip(country_of_origin_age, zip(colour_sex, zip(import_type, zip(season_stakes, zip(total_stakes, zip(no_of_123_starts, zip(no_of_starts_in_past_races, zip(trainer, zip(owner, zip(current_rating, zip(start_of_season_rating, zip(sire, zip(dam, dam_sire)))))))))))))))
-data = [{'Name': a, 'Country of Origin & Age': b, 'Colour & Sex': c, 'Import Type': d, 'Season Stakes': e, 'Total Stakes': f, 'Number Of 123 Starts': g, 'Number of Starts In Past Races': h, 'Trainer': i, 'Owner': j, 'Current Rating': k, 'Start Of Season Rating': l, 'Sire': m, 'Damn': n, 'Dam Sire': o } for a, b, c, d, e, f, g, h, i, j, k, l, m, n, o in itertools.izip(names, country_of_origin_age, colour_sex,import_type, season_stakes, total_stakes, no_of_starts_in_past_races, no_of_starts_in_past_races, trainer, owner, current_rating, start_of_season_rating, sire, dam, dam_sire)]
+data = [{'Name': a, 'Country of Origin & Age': b, 'Colour & Sex': c, 'Import Type': d, 'Season Stakes': e, 'Total Stakes': f, 'Number Of 123 Starts': g, 'Number of Starts In Past Races': h, 'Trainer': i, 'Owner': j, 'Current Rating': k, 'Start Of Season Rating': l, 'Sire': m, 'Dam': n, 'Dam Sire': o } for a, b, c, d, e, f, g, h, i, j, k, l, m, n, o in itertools.izip(names, country_of_origin_age, colour_sex,import_type, season_stakes, total_stakes, no_of_starts_in_past_races, no_of_starts_in_past_races, trainer, owner, current_rating, start_of_season_rating, sire, dam, dam_sire)]
 
 
 with open('data.json', 'w') as outfile:
